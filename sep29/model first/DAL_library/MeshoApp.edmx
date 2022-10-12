@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MeshoApp.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MeshoAppStoreContainer">
+    <EntitySet Name="customers" EntityType="MeshoApp.Store.customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="products" EntityType="MeshoApp.Store.products" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="customerproduct" Association="MeshoApp.Store.customerproduct">
+      <End Role="customer" EntitySet="customers" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="custid" />
+    </Key>
+    <Property Name="custid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="custname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="custaddress_streetname" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="prodid" />
+    </Key>
+    <Property Name="prodid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prodname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="price" Type="int" Nullable="false" />
+    <Property Name="customer_custid" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="customerproduct">
+    <End Role="customer" Type="MeshoApp.Store.customers" Multiplicity="1" />
+    <End Role="product" Type="MeshoApp.Store.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customer">
+        <PropertyRef Name="custid" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="customer_custid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MeshoApp" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="MeshoAppContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="customers" EntityType="MeshoApp.customer" />
+          <EntitySet Name="products" EntityType="MeshoApp.product" />
+          <AssociationSet Name="customerproduct" Association="MeshoApp.customerproduct">
+            <End Role="customer" EntitySet="customers" />
+            <End Role="product" EntitySet="products" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="custid" />
+          </Key>
+          <Property Name="custid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="custname" Type="String" Nullable="false" />
+          <Property Name="custaddress" Type="MeshoApp.streetno" Nullable="false" />
+          <NavigationProperty Name="products" Relationship="MeshoApp.customerproduct" FromRole="customer" ToRole="product" />
+        </EntityType>
+        <ComplexType Name="streetno" >
+          <Property Type="String" Name="streetname" Nullable="false" />
+        </ComplexType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="prodid" />
+          </Key>
+          <Property Name="prodid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="prodname" Type="String" Nullable="false" />
+          <Property Name="price" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="customer" Relationship="MeshoApp.customerproduct" FromRole="product" ToRole="customer" />
+          <Property Name="customer_custid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="customerproduct">
+          <End Type="MeshoApp.customer" Role="customer" Multiplicity="1" />
+          <End Type="MeshoApp.product" Role="product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="customer">
+              <PropertyRef Name="custid" />
+            </Principal>
+            <Dependent Role="product">
+              <PropertyRef Name="customer_custid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MeshoAppStoreContainer" CdmEntityContainer="MeshoAppContainer">
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="IsTypeOf(MeshoApp.customer)">
+        <MappingFragment StoreEntitySet="customers">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ComplexProperty Name="custaddress" TypeName="MeshoApp.streetno">
+            <ScalarProperty Name="streetname" ColumnName="custaddress_streetname" />
+          </ComplexProperty>
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="IsTypeOf(MeshoApp.product)">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="prodid" ColumnName="prodid" />
+          <ScalarProperty Name="prodname" ColumnName="prodname" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="customer_custid" ColumnName="customer_custid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

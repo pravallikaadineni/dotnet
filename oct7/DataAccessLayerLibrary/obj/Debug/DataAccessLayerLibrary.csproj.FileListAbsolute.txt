@@ -1,0 +1,9 @@
+D:\repos\oct7\DataAccessLayerLibrary\bin\Debug\DataAccessLayerLibrary.dll
+D:\repos\oct7\DataAccessLayerLibrary\bin\Debug\DataAccessLayerLibrary.pdb
+D:\repos\oct7\DataAccessLayerLibrary\bin\Debug\BusinessLogicLayerLibrary.dll
+D:\repos\oct7\DataAccessLayerLibrary\bin\Debug\BusinessLogicLayerLibrary.pdb
+D:\repos\oct7\DataAccessLayerLibrary\obj\Debug\DataAccessLayerLibrary.csproj.AssemblyReference.cache
+D:\repos\oct7\DataAccessLayerLibrary\obj\Debug\DataAccessLayerLibrary.csproj.CoreCompileInputs.cache
+D:\repos\oct7\DataAccessLayerLibrary\obj\Debug\DataAccessLayerLibrary.csproj.CopyComplete
+D:\repos\oct7\DataAccessLayerLibrary\obj\Debug\DataAccessLayerLibrary.dll
+D:\repos\oct7\DataAccessLayerLibrary\obj\Debug\DataAccessLayerLibrary.pdb

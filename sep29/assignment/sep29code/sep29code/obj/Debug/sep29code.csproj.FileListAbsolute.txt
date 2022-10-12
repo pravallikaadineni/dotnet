@@ -1,0 +1,16 @@
+D:\repos\sep29code\sep29code\bin\Debug\sep29code.exe.config
+D:\repos\sep29code\sep29code\bin\Debug\sep29code.exe
+D:\repos\sep29code\sep29code\bin\Debug\sep29code.pdb
+D:\repos\sep29code\sep29code\obj\Debug\sep29code.csproj.AssemblyReference.cache
+D:\repos\sep29code\sep29code\obj\Debug\sep29code.csproj.SuggestedBindingRedirects.cache
+D:\repos\sep29code\sep29code\obj\Debug\sep29code.csproj.CoreCompileInputs.cache
+D:\repos\sep29code\sep29code\obj\Debug\sep29code.exe
+D:\repos\sep29code\sep29code\obj\Debug\sep29code.pdb
+D:\repos\sep29code\sep29code\bin\Debug\DAL_library.dll
+D:\repos\sep29code\sep29code\bin\Debug\DAL_library.pdb
+D:\repos\sep29code\sep29code\obj\Debug\sep29code.csproj.CopyComplete
+D:\repos\sep29code\sep29code\bin\Debug\EntityFramework.dll
+D:\repos\sep29code\sep29code\bin\Debug\EntityFramework.SqlServer.dll
+D:\repos\sep29code\sep29code\bin\Debug\DAL_library.dll.config
+D:\repos\sep29code\sep29code\bin\Debug\EntityFramework.xml
+D:\repos\sep29code\sep29code\bin\Debug\EntityFramework.SqlServer.xml

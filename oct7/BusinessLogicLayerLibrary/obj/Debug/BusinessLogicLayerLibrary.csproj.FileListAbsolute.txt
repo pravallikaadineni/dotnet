@@ -1,0 +1,6 @@
+D:\repos\oct7\BusinessLogicLayerLibrary\bin\Debug\BusinessLogicLayerLibrary.dll
+D:\repos\oct7\BusinessLogicLayerLibrary\bin\Debug\BusinessLogicLayerLibrary.pdb
+D:\repos\oct7\BusinessLogicLayerLibrary\obj\Debug\BusinessLogicLayerLibrary.csproj.AssemblyReference.cache
+D:\repos\oct7\BusinessLogicLayerLibrary\obj\Debug\BusinessLogicLayerLibrary.csproj.CoreCompileInputs.cache
+D:\repos\oct7\BusinessLogicLayerLibrary\obj\Debug\BusinessLogicLayerLibrary.dll
+D:\repos\oct7\BusinessLogicLayerLibrary\obj\Debug\BusinessLogicLayerLibrary.pdb

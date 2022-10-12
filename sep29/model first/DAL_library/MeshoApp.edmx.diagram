@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b21e69c6415b4301b849ed4162ac7c18" Name="Diagram1" >
+        <EntityTypeShape EntityType="MeshoApp.customer" Width="1.5" PointX="2.875" PointY="1.75" />
+        <EntityTypeShape EntityType="MeshoApp.product" Width="1.5" PointX="5.125" PointY="1.375" />
+        <AssociationConnector Association="MeshoApp.customerproduct" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

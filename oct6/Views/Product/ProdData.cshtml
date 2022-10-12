@@ -1,0 +1,30 @@
+﻿@model oct6.Models.ProductModel
+
+@{
+    ViewBag.Title = "ProdData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ProdData</h2>
+
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.Label("Enter Prodtid")
+        @Html.TextBox("id")
+        @Html.ValidationMessage("Custid")
+    </div>
+
+    <div>
+        @Html.Label("Enter product name")
+        @Html.TextBox("name")
+        @Html.ValidationMessage("Custname")
+    </div>
+
+
+    <div>
+        <input type="submit" name="ProdData" value="accept product Data" />
+    </div>
+
+}

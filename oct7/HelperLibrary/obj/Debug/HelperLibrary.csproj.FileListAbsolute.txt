@@ -1,0 +1,11 @@
+D:\repos\oct7\HelperLibrary\bin\Debug\HelperLibrary.dll
+D:\repos\oct7\HelperLibrary\bin\Debug\HelperLibrary.pdb
+D:\repos\oct7\HelperLibrary\bin\Debug\BusinessLogicLayerLibrary.dll
+D:\repos\oct7\HelperLibrary\bin\Debug\DataAccessLayerLibrary.dll
+D:\repos\oct7\HelperLibrary\bin\Debug\BusinessLogicLayerLibrary.pdb
+D:\repos\oct7\HelperLibrary\bin\Debug\DataAccessLayerLibrary.pdb
+D:\repos\oct7\HelperLibrary\obj\Debug\HelperLibrary.csproj.AssemblyReference.cache
+D:\repos\oct7\HelperLibrary\obj\Debug\HelperLibrary.csproj.CoreCompileInputs.cache
+D:\repos\oct7\HelperLibrary\obj\Debug\HelperLibrary.csproj.CopyComplete
+D:\repos\oct7\HelperLibrary\obj\Debug\HelperLibrary.dll
+D:\repos\oct7\HelperLibrary\obj\Debug\HelperLibrary.pdb
