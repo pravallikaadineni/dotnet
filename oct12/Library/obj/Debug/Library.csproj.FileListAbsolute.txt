@@ -1,0 +1,6 @@
+D:\repos\webformsproject\Library\bin\Debug\Library.dll
+D:\repos\webformsproject\Library\bin\Debug\Library.pdb
+D:\repos\webformsproject\Library\obj\Debug\Library.csproj.AssemblyReference.cache
+D:\repos\webformsproject\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+D:\repos\webformsproject\Library\obj\Debug\Library.dll
+D:\repos\webformsproject\Library\obj\Debug\Library.pdb
