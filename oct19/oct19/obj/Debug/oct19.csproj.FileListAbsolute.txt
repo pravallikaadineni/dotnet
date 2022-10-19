@@ -1,0 +1,6 @@
+D:\repos\oct19\oct19\bin\Debug\oct19.dll
+D:\repos\oct19\oct19\bin\Debug\oct19.pdb
+D:\repos\oct19\oct19\obj\Debug\oct19.csproj.AssemblyReference.cache
+D:\repos\oct19\oct19\obj\Debug\oct19.csproj.CoreCompileInputs.cache
+D:\repos\oct19\oct19\obj\Debug\oct19.dll
+D:\repos\oct19\oct19\obj\Debug\oct19.pdb
