@@ -1,0 +1,56 @@
+GitHub Link : https://github.com/pravallikaadineni/dotnet/tree/main/AzureProject
+
+https://mobiletrail.azurewebsites.net/webform1
+
+==============================================================================================================
+sql commands
+==============================================================================================================
+use rainbowdb
+create table Student
+(
+studid int primary key,
+studname varchar(20),
+studclass int 
+)
+
+create table Subject
+(
+subid int primary key,
+subname varchar(20)
+)
+
+create table Class
+(
+classno int primary key,
+section varchar(20)
+)
+
+insert into Student values(1,'sweety',5)
+insert into Student values(2,'Nani',6)
+insert into Student values(3,'Honey',7)
+insert into Student values(4,'sam',8)
+insert into Student values(5,'pinky',10)
+
+select * from Student
+
+insert into class values(1,'a')
+insert into class values(2,'b')
+insert into class values(3,'b')
+insert into class values(4,'a')
+insert into class values(5,'c')
+
+select * from Class
+
+insert into subject values(1,'telugu')
+insert into subject values(2,'english')
+insert into subject values(3,'maths')
+insert into subject values(4,'science')
+insert into subject values(5,'social')
+
+select * from subject
+
+
+
+
+
+
